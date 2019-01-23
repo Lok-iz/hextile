@@ -66,7 +66,7 @@ module.exports = function (geojson, options = {}) {
   options.shape = options.shape || 'square'
   options.tilt = options.tilt || 0
   options.width = options.width || 1000
-  options.width = Math.max(options.width, 500)
+  options.width = Math.max(options.width, 100)
   options.width = Math.min(options.width, 500000)
   options.center = options.center || [(bbox[0] + bbox[2]) / 2, (bbox[1] + bbox[3]) / 2]
   options.projection = options.projection || equirectangular(options.center, options.width)
